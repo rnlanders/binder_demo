@@ -1,1 +1,2 @@
-install.packages(c("tidyverse","psych"))
+install.packages("tidyverse")
+install.packages("psych")
