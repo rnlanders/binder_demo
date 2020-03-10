@@ -3,12 +3,16 @@ title: "R Notebook"
 output: html_notebook
 ---
 
+# Library Imports
 
 ```{r}
 library(tidyverse)
 library(psych)
 ```
 
+# Visualization
+
+Next, we create a jitterplot.
 
 ```{r warning=F}
 data(bfi)
