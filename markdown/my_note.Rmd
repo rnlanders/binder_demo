@@ -1,0 +1,16 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+library(psych)
+```
+
+
+```{r warning=F}
+data(bfi)
+ggplot(bfi, aes(A1, A5)) + geom_jitter()
+```
