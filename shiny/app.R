@@ -1,14 +1,9 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
+# Notice I do not load tidyverse here, because it's bloated for what we need
 library(shiny)
+library(dplyr)
+library(ggplot2)
 
+# This is the user interface. It receives output$ and sends input$.
 ui <- fluidPage(
     titlePanel("Garcia et al. Interactive Analysis"),
     sidebarLayout(
@@ -27,6 +22,7 @@ ui <- fluidPage(
     )
 )
 
+# This is the server-side code. It receives input$ and sends output$.
 server <- function(input, output) {
 
     output$garcia_scatterplot <- renderPlot({
