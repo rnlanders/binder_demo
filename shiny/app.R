@@ -34,7 +34,7 @@ server <- function(input, output) {
             label_txt <- "Appropriateness"
         } else if(input$dvnum == 2) {
             for_shiny_tbl <- mutate(for_shiny_tbl, selected_dv = anger_pred_vals)
-            label_txt <- "Anger"
+            label_txt <- "Anger" 
         } else {
             for_shiny_tbl <- mutate(for_shiny_tbl, selected_dv = liking_pred_vals)
             label_txt <- "Likeability"
