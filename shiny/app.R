@@ -6,7 +6,7 @@ library(ggplot2)
 # This is the user interface. It receives output$ and sends input$.
 ui <- fluidPage(
     titlePanel("Garcia et al. Interactive Analysis"),
-    sidebarLayout(
+    sidebarLayout( 
         sidebarPanel(
             selectInput("dvnum",
                         "Selected DV:",
